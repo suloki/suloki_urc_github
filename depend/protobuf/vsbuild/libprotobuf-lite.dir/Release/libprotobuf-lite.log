@@ -1,0 +1,61 @@
+﻿Build started 2018/3/19 17:50:40.
+     1>Project "F:\code\server\xhbase\lib\depend\protobuf\vsbuild\libprotobuf-lite.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt
+         CMake does not need to re-run because F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\code\server\xhbase\lib\depend\protobuf\vsbuild /IF:\code\server\xhbase\lib\depend\protobuf\src /nologo /W3 /WX- /MP /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GOOGLE_PROTOBUF_CMAKE_BUILD /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"libprotobuf-lite.dir\Release\\" /Fd"libprotobuf-lite.dir\Release\vc120.pdb" /Gd /TP /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 /wd4309 /analyze- /errorReport:prompt   /bigobj F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\arena.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\arenastring.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\extension_set.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\generated_message_util.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\io\coded_stream.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\io\zero_copy_stream.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\message_lite.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\repeated_field.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_gcc.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\bytestream.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\common.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\int128.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\once.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\status.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\statusor.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\stringpiece.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\stringprintf.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\structurally_valid.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\strutil.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\stubs\time.cc F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\wire_format_lite.cc
+         arena.cc
+         arenastring.cc
+         extension_set.cc
+         generated_message_util.cc
+         coded_stream.cc
+         zero_copy_stream.cc
+         zero_copy_stream_impl_lite.cc
+         message_lite.cc
+         repeated_field.cc
+         atomicops_internals_x86_gcc.cc
+         atomicops_internals_x86_msvc.cc
+         bytestream.cc
+         common.cc
+         int128.cc
+         once.cc
+         status.cc
+         statusor.cc
+         stringpiece.cc
+         stringprintf.cc
+         structurally_valid.cc
+         strutil.cc
+         time.cc
+         wire_format_lite.cc
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\libprotobuf-lite.lib" /NOLOGO   /machine:X86 "libprotobuf-lite.dir\Release\arena.obj"
+         "libprotobuf-lite.dir\Release\arenastring.obj"
+         "libprotobuf-lite.dir\Release\extension_set.obj"
+         "libprotobuf-lite.dir\Release\generated_message_util.obj"
+         "libprotobuf-lite.dir\Release\coded_stream.obj"
+         "libprotobuf-lite.dir\Release\zero_copy_stream.obj"
+         "libprotobuf-lite.dir\Release\zero_copy_stream_impl_lite.obj"
+         "libprotobuf-lite.dir\Release\message_lite.obj"
+         "libprotobuf-lite.dir\Release\repeated_field.obj"
+         "libprotobuf-lite.dir\Release\atomicops_internals_x86_gcc.obj"
+         "libprotobuf-lite.dir\Release\atomicops_internals_x86_msvc.obj"
+         "libprotobuf-lite.dir\Release\bytestream.obj"
+         "libprotobuf-lite.dir\Release\common.obj"
+         "libprotobuf-lite.dir\Release\int128.obj"
+         "libprotobuf-lite.dir\Release\once.obj"
+         "libprotobuf-lite.dir\Release\status.obj"
+         "libprotobuf-lite.dir\Release\statusor.obj"
+         "libprotobuf-lite.dir\Release\stringpiece.obj"
+         "libprotobuf-lite.dir\Release\stringprintf.obj"
+         "libprotobuf-lite.dir\Release\structurally_valid.obj"
+         "libprotobuf-lite.dir\Release\strutil.obj"
+         "libprotobuf-lite.dir\Release\time.obj"
+         "libprotobuf-lite.dir\Release\wire_format_lite.obj"
+     1>atomicops_internals_x86_gcc.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         libprotobuf-lite.vcxproj -> F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\libprotobuf-lite.lib
+     1>Done Building Project "F:\code\server\xhbase\lib\depend\protobuf\vsbuild\libprotobuf-lite.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.24

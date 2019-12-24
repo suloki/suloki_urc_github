@@ -1,0 +1,16 @@
+﻿Build started 2018/3/19 17:51:13.
+     1>Project "F:\code\server\xhbase\lib\depend\protobuf\vsbuild\protoc.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt
+         CMake does not need to re-run because F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\code\server\xhbase\lib\depend\protobuf\vsbuild /IF:\code\server\xhbase\lib\depend\protobuf\src /nologo /W3 /WX- /MP /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GOOGLE_PROTOBUF_CMAKE_BUILD /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"protoc.dir\Release\\" /Fd"protoc.dir\Release\vc120.pdb" /Gd /TP /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 /wd4309 /analyze- /errorReport:prompt   /bigobj F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\compiler\main.cc
+         main.cc
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\protoc.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib Release\libprotobuf.lib Release\libprotoc.lib Release\libprotobuf.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/protoc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/protoc.lib" /MACHINE:X86 /SAFESEH   /machine:X86 protoc.dir\Release\main.obj
+         protoc.vcxproj -> F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\protoc.exe
+     1>Done Building Project "F:\code\server\xhbase\lib\depend\protobuf\vsbuild\protoc.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.12

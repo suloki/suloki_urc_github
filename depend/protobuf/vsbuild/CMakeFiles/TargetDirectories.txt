@@ -1,0 +1,8 @@
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/libprotobuf-lite.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/INSTALL.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/libprotobuf.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/js_embed.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/protoc.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/libprotoc.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/ALL_BUILD.dir
+F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/ZERO_CHECK.dir

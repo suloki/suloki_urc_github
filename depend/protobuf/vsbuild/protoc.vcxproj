@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{FD4C5361-CBE7-37EF-B172-931AA8727DBF}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>protoc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">protoc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">protoc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">protoc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">protoc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">protoc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">protoc</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Debug\libprotobufd.lib;Debug\libprotocd.lib;Debug\libprotobufd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Debug/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Debug/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Debug\libprotobufd.lib;Debug\libprotocd.lib;Debug\libprotobufd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Debug/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Debug/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\libprotobuf.lib;Release\libprotoc.lib;Release\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\libprotobuf.lib;Release\libprotoc.lib;Release\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel\libprotobuf.lib;MinSizeRel\libprotoc.lib;MinSizeRel\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/MinSizeRel/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel\libprotobuf.lib;MinSizeRel\libprotoc.lib;MinSizeRel\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/MinSizeRel/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo\libprotobuf.lib;RelWithDebInfo\libprotoc.lib;RelWithDebInfo\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/RelWithDebInfo/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions)  /bigobj</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4018;4355;4800;4251;4996;4146;4305;4309</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\code\server\xhbase\lib\depend\protobuf\vsbuild;F:\code\server\xhbase\lib\depend\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo\libprotobuf.lib;RelWithDebInfo\libprotoc.lib;RelWithDebInfo\libprotobuf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/RelWithDebInfo/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/code/server/xhbase/lib/depend/protobuf/vsbuild/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\bin\cmake.exe -HF:/code/server/xhbase/lib/depend/protobuf/cmake -BF:/code/server/xhbase/lib/depend/protobuf/vsbuild --check-stamp-file F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCCompiler.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeCXXCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\3.8.0-rc4\CMakeRCCompiler.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CMakeDependentOption.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\extract_includes.bat.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf-lite.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotobuf.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\libprotoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protoc.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\install.cmake;D:\software\work\cmake-3.8.0-rc4-win64-x64\cmake-3.8.0-rc4-win64-x64\share\cmake-3.8\Modules\GNUInstallDirs.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-config-version.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-module.cmake.in;F:\code\server\xhbase\lib\depend\protobuf\cmake\protobuf-options.cmake;F:\code\server\xhbase\lib\depend\protobuf\cmake\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\code\server\xhbase\lib\depend\protobuf\vsbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\compiler\main.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\code\server\xhbase\lib\depend\protobuf\vsbuild\ZERO_CHECK.vcxproj">
+      <Project>6AF77C29-B016-3B5F-9492-D327E794F11D</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\code\server\xhbase\lib\depend\protobuf\vsbuild\libprotobuf.vcxproj">
+      <Project>3EE53F5B-FCE5-3C06-A592-D9C21D1BB757</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\code\server\xhbase\lib\depend\protobuf\vsbuild\libprotoc.vcxproj">
+      <Project>FB2172EB-6F09-3339-B565-06143DA4F1C5</Project>
+      <Name>libprotoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

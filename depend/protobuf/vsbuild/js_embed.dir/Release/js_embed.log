@@ -1,0 +1,16 @@
+﻿Build started 2018/3/19 17:50:40.
+     1>Project "F:\code\server\xhbase\lib\depend\protobuf\vsbuild\js_embed.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule F:/code/server/xhbase/lib/depend/protobuf/cmake/CMakeLists.txt
+         CMake does not need to re-run because F:/code/server/xhbase/lib/depend/protobuf/vsbuild/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IF:\code\server\xhbase\lib\depend\protobuf\vsbuild /IF:\code\server\xhbase\lib\depend\protobuf\src /nologo /W3 /WX- /MP /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D GOOGLE_PROTOBUF_CMAKE_BUILD /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"js_embed.dir\Release\\" /Fd"js_embed.dir\Release\vc120.pdb" /Gd /TP /wd4244 /wd4267 /wd4018 /wd4355 /wd4800 /wd4251 /wd4996 /wd4146 /wd4305 /wd4309 /analyze- /errorReport:prompt   /bigobj F:\code\server\xhbase\lib\depend\protobuf\src\google\protobuf\compiler\js\embed.cc
+         embed.cc
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\js_embed.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/js_embed.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:/code/server/xhbase/lib/depend/protobuf/vsbuild/Release/js_embed.lib" /MACHINE:X86 /SAFESEH   /machine:X86 js_embed.dir\Release\embed.obj
+         js_embed.vcxproj -> F:\code\server\xhbase\lib\depend\protobuf\vsbuild\Release\js_embed.exe
+     1>Done Building Project "F:\code\server\xhbase\lib\depend\protobuf\vsbuild\js_embed.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.36
